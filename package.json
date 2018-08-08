@@ -12,6 +12,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "landing-page-components": "^1.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
