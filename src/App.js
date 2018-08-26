@@ -7,7 +7,12 @@ import { StyledNav, StyledHeader,
 	SplitTextTitle,
 	SplitTextBody,
 	SplitTextDiv,
-	SplitPicDiv
+	SplitPicDiv,
+	CenteredSection,
+	CenteredTitle,
+	StyledEmailSection,
+	StyledEmailInput,
+	StyledSubmitButton
 } from 'landing-page-components';
 import sizes from 'point-breaks';
 import PHOTO from './dice-blur.jpg'
@@ -31,6 +36,10 @@ class App extends Component {
 
   componentWillUnmount() {
 	window.removeEventListener("resize", this.updateWidth.bind(this));
+  }
+
+  emailSubmitClicked() {
+	console.log('email submitted');
   }
 
   render() {
@@ -86,6 +95,15 @@ class App extends Component {
 				<SplitTextBody>Log into whichever brokerage site you use (we recommend <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">RobinHood</a> for no transaction fees) and put relatively small investments into the random stock provided.</SplitTextBody>
 			</SplitTextDiv>
 		</SplitSection>
+		<CenteredSection>
+			<CenteredTitle>
+				Sign Up Now!
+			</CenteredTitle>
+			<StyledEmailSection>
+				<StyledEmailInput />
+				<StyledSubmitButton onClick={() => {this.emailSubmitClicked()}}>Sign Up!</StyledSubmitButton>
+			</StyledEmailSection>
+		</CenteredSection>
 	  </div>
 	);
   }
