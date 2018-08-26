@@ -1,3 +1,7 @@
+a {
+	text-decoration: none;
+}
+
 .App {
   height: 100%;
   min-height: 400px;
@@ -45,8 +49,4 @@
   color: #00d8ff;
   padding: .2em .3em;
   border-radius: .2em;
-}
-
-a {
-	text-decoration: none;
 }
