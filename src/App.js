@@ -72,7 +72,7 @@ class App extends Component {
 	  }];
     return (
 	  <div>
-		  <StyledNav links={[{href: '#about', text: "About"}, {href: "#email", text: "Sign Up", isButton: true}]} />
+		  <StyledNav links={[{href: '#about', text: "About"}, {href: "#callToAction", text: "Sign Up", isButton: true}]} />
 		  <StyledHeader imageUrl={PHOTO} backgroundPositionY="20%">
 			<HoverDiv>Embrace Random</HoverDiv>
 		  </StyledHeader>
@@ -96,7 +96,7 @@ class App extends Component {
 			</SplitTextDiv>
 		</SplitSection>
 		<CenteredSection>
-			<CenteredTitle>
+			<CenteredTitle id="callToAction">
 				Sign Up Now!
 			</CenteredTitle>
 			<StyledEmailSection>
