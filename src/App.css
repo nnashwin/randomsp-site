@@ -46,3 +46,7 @@
   padding: .2em .3em;
   border-radius: .2em;
 }
+
+a {
+	text-decoration: none;
+}
