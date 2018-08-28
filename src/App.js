@@ -17,7 +17,7 @@ import { StyledNav, StyledHeader,
 import sizes from 'point-breaks';
 import PHOTO from './dice-blur.jpg'
 import styled from 'styled-components';
-import { HoverDiv } from './Components'; 
+import { HoverDiv, SignUpButton } from './Components';
 
 class App extends Component {
   constructor(props) {
@@ -76,7 +76,7 @@ class App extends Component {
 		  <StyledHeader imageUrl={PHOTO} backgroundPositionY="20%">
 			<HoverDiv>Embrace Random</HoverDiv>
 		  </StyledHeader>
-		<StyledIconSection icons={iconArr} />
+		<StyledIconSection id="#about" icons={iconArr} />
 
 		<SplitSection>
 			<SplitPicDiv order={'right'} />
@@ -103,7 +103,7 @@ class App extends Component {
 				<form action="https://medium.us17.list-manage.com/subscribe/post?u=2a967cb7147ef8c27721091a1&amp;id=a41c6508fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div style={{"position": "absolute", "left": "-5000px"}} aria-hidden="true"><input type="text" name="b_2a967cb7147ef8c27721091a1_a41c6508fe" tabIndex="-1" value="" /></div>
 						<div className="clear">
-							<StyledSubmitButton>Sign Up</StyledSubmitButton>
+							<SignUpButton>Sign Up</SignUpButton>
 						</div>
 				</form>
 			</StyledEmailSection>
