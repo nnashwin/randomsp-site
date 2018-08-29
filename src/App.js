@@ -15,7 +15,10 @@ import { StyledNav, StyledHeader,
 	StyledSubmitButton
 } from 'landing-page-components';
 import sizes from 'point-breaks';
-import PHOTO from './dice-blur.jpg'
+import dicePhoto from './dice-blur.jpg';
+import arrowPic from './arrow.jpg';
+import closePic from './close-up.jpg';
+import budgetPic from './budget.jpg';
 import styled from 'styled-components';
 import { HoverDiv, SignUpButton } from './Components';
 
@@ -73,23 +76,22 @@ class App extends Component {
     return (
 	  <div>
 		  <StyledNav links={[{href: '#about', text: "About"}, {href: "#callToAction", text: "Sign Up", isButton: true}]} />
-		  <StyledHeader imageUrl={PHOTO} backgroundPositionY="20%">
+		  <StyledHeader imageUrl={dicePhoto} backgroundPositionY="20%">
 			<HoverDiv>Embrace Random</HoverDiv>
 		  </StyledHeader>
 		<StyledIconSection id="#about" icons={iconArr} />
 
 		<SplitSection>
-			<SplitPicDiv order={'right'} />
+			<SplitPicDiv order={'right'} imageUrl={arrowPic} />
 			{setSplitDivOrder('left', 'Save Time', 'No more choosing stocks.  No more thinking.  Let the power of random and not putting all of your eggs in one basket balance and diversify your investments, son!')}
 		</SplitSection>
 		<SplitSection>
-			{ this.state.width < smallTabletWidth ? <SplitPicDiv order={'right'} imageUrl={'https://placekitten.com/1200/480'} /> : <SplitPicDiv order={'left'} imageUrl={'https://placekitten.com/1200/480'} />}
+			{ this.state.width < smallTabletWidth ? <SplitPicDiv order={'right'} imageUrl={budgetPic} /> : <SplitPicDiv order={'left'} imageUrl={budgetPic} />}
 			{ this.state.width < smallTabletWidth ? setSplitDivOrder('left', 'Save Money', 'Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.') 
 				: setSplitDivOrder('right', 'Save Money', 'Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.') }
-			
 		</SplitSection>
 		<SplitSection>
-			<SplitPicDiv order={'right'} />
+			<SplitPicDiv order={'right'} imageUrl={closePic} />
 			<SplitTextDiv order={'left'}>
 				<SplitTextTitle>Feel at Ease</SplitTextTitle>
 				<SplitTextBody>Log into whichever brokerage site you use (we recommend <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">RobinHood</a> for no transaction fees) and put relatively small investments into the random stock provided.</SplitTextBody>
