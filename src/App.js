@@ -79,7 +79,7 @@ class App extends Component {
 		  <StyledHeader imageUrl={dicePhoto} backgroundPositionY="20%">
 			<HoverDiv>Embrace Random</HoverDiv>
 		  </StyledHeader>
-		<StyledIconSection id="#about" icons={iconArr} />
+		<StyledIconSection id="about" icons={iconArr} />
 
 		<SplitSection>
 			<SplitPicDiv order={'right'} imageUrl={arrowPic} />
