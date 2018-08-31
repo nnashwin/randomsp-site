@@ -105,7 +105,7 @@ class App extends Component {
 				<form action="https://medium.us17.list-manage.com/subscribe/post?u=2a967cb7147ef8c27721091a1&amp;id=a41c6508fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div style={{"position": "absolute", "left": "-5000px"}} aria-hidden="true"><input type="text" name="b_2a967cb7147ef8c27721091a1_a41c6508fe" tabIndex="-1" value="" /></div>
 						<div className="clear">
-							<SignUpButton>Sign Up</SignUpButton>
+							<a class="gumroad-button" href="https://gum.co/scuB" target="_blank" data-gumroad-single-product="true">Product Link</a>
 						</div>
 				</form>
 			</StyledEmailSection>
