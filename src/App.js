@@ -15,8 +15,8 @@ import { StyledNav, StyledHeader,
 	StyledSubmitButton
 } from 'landing-page-components';
 import sizes from 'point-breaks';
+import atEasePic from './at-ease.jpg';
 import dicePhoto from './dice-blur.jpg';
-import arrowPic from './arrow.jpg';
 import closePic from './close-up.jpg';
 import budgetPic from './budget.jpg';
 import styled from 'styled-components';
@@ -82,7 +82,7 @@ class App extends Component {
 		<StyledIconSection id="about" icons={iconArr} />
 
 		<SplitSection>
-			<SplitPicDiv order={'right'} imageUrl={arrowPic} />
+			<SplitPicDiv order={'right'} imageUrl={closePic} />
 			{setSplitDivOrder('left', 'Save Time', 'No more choosing stocks.  No more thinking.  Let the power of random and not putting all of your eggs in one basket balance and diversify your investments, son!')}
 		</SplitSection>
 		<SplitSection>
@@ -91,7 +91,7 @@ class App extends Component {
 				: setSplitDivOrder('right', 'Save Money', <div>Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.</div>) }
 		</SplitSection>
 		<SplitSection>
-			<SplitPicDiv order={'right'} imageUrl={closePic} />
+			<SplitPicDiv order={'right'} imageUrl={atEasePic} />
 			<SplitTextDiv order={'left'}>
 				<SplitTextTitle>Feel at Ease</SplitTextTitle>
 				<SplitTextBody>Log into whichever brokerage site you use (we recommend <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">RobinHood</a> for no transaction fees) and put relatively small investments into the random stock provided.</SplitTextBody>
