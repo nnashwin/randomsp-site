@@ -87,8 +87,8 @@ class App extends Component {
 		</SplitSection>
 		<SplitSection>
 			{ this.state.width < smallTabletWidth ? <SplitPicDiv order={'right'} imageUrl={budgetPic} /> : <SplitPicDiv order={'left'} imageUrl={budgetPic} />}
-			{ this.state.width < smallTabletWidth ? setSplitDivOrder('left', 'Save Money', 'Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.') 
-				: setSplitDivOrder('right', 'Save Money', 'Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.') }
+			{ this.state.width < smallTabletWidth ? setSplitDivOrder('left', 'Save Money', <div>Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.</div>)
+				: setSplitDivOrder('right', 'Save Money', <div>Instead of Paying Percents out of your Investment Portfolio, pay a few dollars a month and SAVE! Check out <a href="https://www.investopedia.com/university/mutualfunds/mutualfunds2.asp">article</a> for reference.</div>) }
 		</SplitSection>
 		<SplitSection>
 			<SplitPicDiv order={'right'} imageUrl={closePic} />
